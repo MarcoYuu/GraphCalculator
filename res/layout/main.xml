@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/InputExpr"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4.5dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        android:layout_marginTop="12dp"
+        android:background="#00000000"
+        android:hint="@string/prompt_expr"
+        android:inputType="numberDecimal" >
+
+        <requestFocus />
+    </EditText>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/divider"
+        android:padding="6dp"
+        android:scaleType="fitXY"
+        android:src="@android:drawable/divider_horizontal_textfield" />
+
+    <EditText
+        android:id="@+id/InputExpr2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4.5dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        android:layout_marginTop="4.5dp"
+        android:background="#00000000"
+        android:hint="@string/prompt_expr2"
+        android:inputType="numberDecimal" >
+    </EditText>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/divider"
+        android:padding="6dp"
+        android:scaleType="fitXY"
+        android:src="@android:drawable/divider_horizontal_textfield" />
+
+    <LinearLayout
+        android:id="@+id/flexible_edit_zone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="true" >
+
+        <Button
+            android:id="@+id/button_equal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="9dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_layout"
+            android:text="@string/equal" />
+
+        <EditText
+            android:id="@+id/Answer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4.5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="4.5dp"
+            android:layout_weight="4.5"
+            android:background="#00000000"
+            android:hint="@string/answer"
+            android:inputType="numberDecimal" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/divider"
+        android:padding="6dp"
+        android:scaleType="fitXY"
+        android:src="@android:drawable/divider_horizontal_textfield" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:baselineAligned="true" >
+
+        <TextView
+            android:id="@+id/x_equal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="1.5dp"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="@string/x_equal" />
+
+        <EditText
+            android:id="@+id/assign"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="4.5dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="4.5dp"
+            android:layout_weight="1.5"
+            android:background="#00000000"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:text="@string/zero" />
+
+        <view
+            android:id="@+id/button_left"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1.5dp"
+            android:layout_marginRight="1.5dp"
+            android:layout_weight="1"
+            class="yuu.application.graphcalculator.util.RepeatButton"
+            android:background="@drawable/button_layout"
+            android:text="@string/left" />
+
+        <view
+            android:id="@+id/button_right"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1.5dp"
+            android:layout_marginRight="1.5dp"
+            android:layout_weight="1"
+            class="yuu.application.graphcalculator.util.RepeatButton"
+            android:background="@drawable/button_layout"
+            android:text="@string/right" />
+
+        <view
+            android:id="@+id/button_back"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="1.5dp"
+            android:layout_weight="1"
+            class="yuu.application.graphcalculator.util.RepeatButton"
+            android:background="@drawable/button_layout"
+            android:text="@string/backspace" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/divider"
+        android:padding="6dp"
+        android:scaleType="fitXY"
+        android:src="@android:drawable/divider_horizontal_textfield" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

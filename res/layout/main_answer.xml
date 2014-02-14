@@ -1,0 +1,30 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="true" >
+
+    <Button
+        android:id="@+id/button_equal"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="9dp"
+        android:layout_weight="1"
+        android:background="@drawable/button_layout"
+        android:text="@string/equal" />
+
+    <EditText
+        android:id="@+id/Answer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4.5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="4.5dp"
+        android:layout_weight="4.5"
+        android:background="#00000000"
+        android:hint="@string/answer"
+        android:inputType="numberDecimal" />
+
+</LinearLayout>

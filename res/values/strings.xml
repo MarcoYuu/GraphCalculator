@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GraphCalcurator</string>
+    <string name="assign">代入値</string>
+    <string name="btn1">1</string>
+    <string name="btn2">2</string>
+    <string name="btn3">3</string>
+    <string name="btn0">0</string>
+    <string name="btn4">4</string>
+    <string name="btn5">5</string>
+    <string name="btn6">6</string>
+    <string name="btn7">7</string>
+    <string name="btn8">8</string>
+    <string name="btn9">9</string>
+    <string name="btndot">.</string>
+    <string name="add">+</string>
+    <string name="sub">-</string>
+    <string name="mult">*</string>
+    <string name="div">/</string>
+    <string name="AC">AC</string>
+    <string name="bracket">()</string>
+    <string name="equal">=</string>
+    <string name="prompt_expr">一つ目の式を入力してください</string>
+    <string name="prompt_expr2">二つ目の式を入力してください</string>
+    <string name="sin">sin</string>
+    <string name="cos">cos</string>
+    <string name="tan">tan</string>
+    <string name="exp">exp</string>
+    <string name="ln">ln</string>
+    <string name="pow">x^n</string>
+    <string name="log">log</string>
+    <string name="left">←</string>
+    <string name="right">→</string>
+    <string name="variable">x</string>
+    <string name="nullstring"></string>
+    <string name="root">√</string>
+    <string name="pi">π</string>
+    <string name="expbase">e</string>
+    <string name="zero">0.0</string>
+    <string name="answer">Answer</string>
+    <string name="x_equal">x =</string>
+    <string name="backspace">BK</string>
+    <string name="factorial">!</string>
+    <string name="makegraph">グ\nラ\nフ</string>
+    <string name="use_answer">Ans</string>
+    <string name="divider">divider</string>
+    <string name="sinh">sinh</string>
+    <string name="cosh">cosh</string>
+    <string name="tanh">tanh</string>
+    <string name="arcsin">sin<sup><small>-1</small></sup></string>
+    <string name="arccos">cos<sup><small>-1</small></sup></string>
+    <string name="arctan">tan<sup><small>-1</small></sup></string>
+    <string name="absolute">| |</string>
+	<string name="max">max</string>
+	<string name="min">min</string>
+	<string name="to_degree">rad\n↓\ndeg</string>
+	<string name="to_rad">deg\n↓\nrad</string>
+	<string name="xaxis">解析範囲</string>
+	<string name="dx">刻み幅</string>
+	<string name="save_graph">グラフの保存</string>
+	<string name="line_width_text">線の太さ</string>
+	<string name="line_color_text">線の色</string>
+	<string name="do_save">する</string>
+	<string name="dont_save">しない</string>
+	<string name="start_paint">グラフ描画</string>
+	<string name="set_infinity">無限とみなす値</string>
+	<string name="antialias">アンチエイリアス</string>
+	<string name="png">png</string>
+	<string name="jpg">jpg</string>
+	<string name="y_scale">y軸拡大</string>
+	<string name="help_message">
+簡単な関数電卓アプリです。
+\n
+\n　上部に式を作り＝ボタンを押すことで結果が表示され、左右にフリックすることで入力キーボードを切り替えられます。
+\n　＝は答えの横のものを押すことでも同様の動作をします。
+\n
+\n　ｘを式に入れると変数として扱われ、ｘ＝の値が代入された結果が表示されます。また、グラフボタンを押すことでｘを変数としたグラフが描画されます。 
+\n　グラフでは解析範囲で指定した範囲を刻み幅で指定した分割幅で座標を計算します。軸は横軸範囲で設定した範囲が画面の横幅いっぱいに表示されるように作成されます。
+\n　横軸範囲よりも解析範囲が小さいとあふれた部分のグラフは作成されません。また、端末のその時の向きに対して横軸を作成するため、グラフの縦長・横長は端末の向きに依存します。
+\n　刻み幅を小さくした時に解析範囲を大きくとると、計算に非常に時間がかかる可能性があるため注意してください。
+\n
+\n　二つの入力領域に有効な式を入力した場合は、ｘを媒介変数とするグラフを作成します。
+\n　その場合、解析範囲は媒介変数の移動範囲を指定することになりますので、適宜横軸範囲を調整してください。
+\n
+\n
+\n　浮動小数点での計算となっているため、 無限大に発散するような値がある場合に正確に無限大にならなかったり、
+       刻み幅が大きすぎて前後の値が小さくなってしまったりすることがあり、 グラフを描く際に余計な線が描画されてしまうおそれがあります。
+\n　その際は、無限とみなす値を適当に設定することで見た目に関してはある程度改善される可能性があるため試してみてください。
+       この値を超える値をグラフの式が返すと、そこでグラフは切断され連続ではなくなります。また、計算過程で非数(NaN)が発生した場合もその点で連続でなくなります。
+	</string>
+	<string name="how_to_use">使い方</string>
+	<string name="axis_range">横軸範囲</string>
+
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="num_button">
+        <item>button_0</item>
+        <item>button_1</item>
+        <item>button_2</item>
+        <item>button_3</item>
+        <item>button_4</item>
+        <item>button_5</item>
+        <item>button_6</item>
+        <item>button_7</item>
+        <item>button_8</item>
+        <item>button_9</item>
+    </string-array>
+    
+    <string-array name="dx_list">
+        <item>0.1</item>
+        <item>0.01</item>
+        <item>0.001</item>
+        <item>0.0001</item>
+    </string-array>
+    
+    <string-array name="width_list">
+        <item>2.0</item>
+        <item>3.0</item>
+        <item>4.0</item>
+        <item>5.0</item>
+        <item>10.0</item>
+        <item>15.0</item>
+        <item>20.0</item>
+    </string-array>
+</resources>
