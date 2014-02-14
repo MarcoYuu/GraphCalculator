@@ -1,0 +1,8 @@
+*.cld
+.project
+.classpath
+apk
+backup
+bin
+project.properties
+*.keystore
